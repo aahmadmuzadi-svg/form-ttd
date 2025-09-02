@@ -55,7 +55,7 @@
       const nama = document.querySelector('input[name="nama"]').value;
       const dataURL = canvas.toDataURL();
 
-      fetch("Tiket Perbaikan", { // Ganti URL di sini
+      fetch("https://script.google.com/macros/s/AKfycbxrFaAMk0P1pMA6SOsJPKG_wS6gjAJmgPM3XUlC1dlTb3KmPmY6AZLPu3pu1KWYcLgoHw/exec", { // Ganti URL di sini
         method: "POST",
         body: JSON.stringify({ nama: nama, tandaTangan: dataURL }),
         headers: { "Content-Type": "application/json" }
@@ -67,3 +67,4 @@
   </script>
 </body>
 </html>
+
